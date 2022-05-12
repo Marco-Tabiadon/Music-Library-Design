@@ -1,0 +1,97 @@
+
+body {
+  background: #0B6AD6;
+  background-attachment: fixed;
+  height: 450px;
+  width: 100vw;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #300F29;
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-size: 50px !important;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+div.containingBox {
+  left: 2.5%;
+  right: 2.5%;
+  background-color: white;
+  width: 95%;
+  height: 70%;
+  margin: auto auto;
+  }
+
+
+header ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  padding: 0;
+  font-size: 19px;
+}
+
+button {
+  border: 0.01em solid black;
+  border-collapse: collapse;
+  border-radius: 2%;
+  color: white;
+  height: 3em;
+  flex: 1 1 auto;
+  background-color: green;
+  margin: 12px solid red;
+}
+
+div.menu {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.2em;
+  row-gap: 2.5em;
+  margin: 2.5em 1em;
+  padding: 0;
+}
+
+div.genres {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  border-radius: 1em;
+  display: block;
+  border: 1px solid black;
+  width: 9.5em;
+  height: 4em;
+}
+
+p {
+  margin-left: 12px;
+  margin-top: 23px;
+  color: white;
+  font-size: 16px;
+}
+
+i {
+  float: left;
+  margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+
+  div.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+  }
+
+  div.containingBox {
+    top: 100px;
+    background-color: white;
+    width: 95%;
+    height: 80%;
+    margin: 2%;
+    }
+
+}
